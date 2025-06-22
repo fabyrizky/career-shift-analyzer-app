@@ -6,7 +6,7 @@ import json
 
 # Page configuration
 st.set_page_config(
-    page_title="Career Simulation with AI Chat", 
+    page_title="Career Simulation", 
     layout="wide",
     initial_sidebar_state="expanded"
 )
