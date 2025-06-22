@@ -15,11 +15,25 @@ st.set_page_config(
 # Advanced CSS for Premium UI/UX
 st.markdown("""
 <style>
-    /* Hide Streamlit branding */
+    /* Hide Streamlit branding and code elements */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
     .stDeployButton {display: none;}
+    .stCodeBlock {display: none !important;}
+    .stCode {display: none !important;}
+    pre {display: none !important;}
+    code {display: none !important;}
+    .highlight {display: none !important;}
+    .language-python {display: none !important;}
+    .streamlit-expanderHeader {display: none !important;}
+    .stExpander {display: none !important;}
+    
+    /* Hide any code-related elements */
+    div[data-testid="stCodeBlock"] {display: none !important;}
+    div[data-testid="code-block"] {display: none !important;}
+    .stMarkdown pre {display: none !important;}
+    .stMarkdown code {display: none !important;}
     
     /* Import Premium Fonts */
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
